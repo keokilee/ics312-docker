@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ics312:
+    build: .
+    working_dir: /ics312
+    volumes:
+      - $PWD/src:/ics312
+    command:
+      - /bin/bash
